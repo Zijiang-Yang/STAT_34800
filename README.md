@@ -1,8 +1,8 @@
-# Modern Methods of Applied Statistics (Spring 2025) STAT 34800
+# Modern Methods of Applied Statistics (Spring 2024) STAT 34800
 Instructor: Aaron Schein <br>
 TAs: Jimmy Lederman, Sean O'Hagan, Jinwen Yang <br>
 
-Term: Spring 2025 <br>
+Term: Spring 2024 <br>
 The University of Chicago
 
 ---
@@ -10,106 +10,157 @@ The University of Chicago
 ## Logistics:
 - Time: Tuesday and Thursday, 3:30am-4:50pm
 - Place: Eckhart room 133
-- TA office hours (starting week of March 31): 
-    - Jimmy: Fri 9-10am (Jones 304)
-    - Sean: Wed 10-11am (Jones 304)
-    - Jinwen: Thu 11am-12pm (Jones 303)
-
+- TA office hours: 
+    - Jimmy: Mon 1:30-2:30pm (Jones 304)
+    - Sean: Wed 3:00-4:00pm (Jones 304)
+    - Jinwen: Fri 10:00-11:00am (Jones 304)
+- Instructor office hours:
+    - Aaron: Thurs 5:00-6:00pm (Searle 236)
 
 ## Assignments
-- [Assignment 1: Bayesian linear regression](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw1/hw1.ipynb). Due **Sunday April 6 at 11:59pm** on GradeScope. 
-- [Assignment 2: Hierarchical models and Gibbs sampling](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw2/hw2.ipynb). Due **Sunday April 13 at 11:59pm** on GradeScope.
-- [Assignment 3: Mixture models and EM](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw3/hw3.ipynb). Due **Sunday April 20 at 11:59pm** on GradeScope. 
+- [Assignment 1: Supervised learning](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw1.ipynb). Due **Saturday March 30 at 11:59pm** on GradeScope. 
+- [Assignment 2: Priors, regularization, shrinkage](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw2.ipynb). Due **Saturday April 6 at 11:59pm** on GradeScope. 
+- [Assignment 3: Exponential families, conjugacy, entropy](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw3.pdf). Due **Monday April 15 at 11:59pm** on GradeScope. 
+- [Assignment 4: HMMs and the USS Scorpion](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw4/hw4.ipynb). Due **Wednesday April 24 at 11:59pm** on GradeScope. 
+- [Assignment 5: EM and Gibbs sampling](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw5/hw5.ipynb). Due **Friday May 10 at 11:59pm** on GradeScope. 
+
 
 ## Schedule
 
-### Lecture 1 (March 25): Intro to probabilistic modeling and Bayesian statistics
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - [Materials for L1-L2](https://dynalist.io/d/ehiGZbaDzYG4q9tJvuCrag3U#z=Hu-cB8VnWnu5IXOgZ-3MaF6C) from Mathew Stephens' STAT 348 (2021) on **the two-class problem and decision theory** 
-    - [Section 8.6](https://www.cs.ubc.ca/~murphyk/MLbook/pml-toc-1may12.pdf) of Kevin Murphy's _Machine Learning: a Probabilistic Perspective_ (2012) on **generative vs discriminative classifiers**
-    - [Section 3.5](https://www.cs.ubc.ca/~murphyk/MLbook/pml-toc-1may12.pdf) of Kevin Murphy's _Machine Learning: a Probabilistic Perspective_ (2012) on **Naive Bayes classifiers**
-    - [Wikipedia on "Additive smoothing"](https://en.wikipedia.org/wiki/Additive_smoothing) aka **"Laplace smoothing"**
-    - [Section 3.3](https://www.cs.ubc.ca/~murphyk/MLbook/pml-toc-1may12.pdf) of Kevin Murphy's _Machine Learning: a Probabilistic Perspective_ (2012) on **the beta-binomial model**
-    - [Chapter VI "On Induction"](https://www.ditext.com/russell/rus6.html) of Bertrand Russell's _Problems of Philosophy_ on **"Bertrand's chicken"**
-    - [Chapter 2.2 "The meaning of probability"](https://www.inference.org.uk/itprnn/book.pdf) of David Mackay's _Information Theory, Inference, and Learning Algorithms_ (2003), on **frequentist versus subjectivist interpretations of probability**
+### Lecture 1 (March 19): Review of decision theory & supervised learning
+- Reading / resources:
+    - Materials for L1-L3 of Matthew Stephens' course: [STAT 348 (Spring 2021)](https://dynalist.io/d/ehiGZbaDzYG4q9tJvuCrag3U#z=Hu-cB8VnWnu5IXOgZ-3MaF6C)
+    - Chap 2 of [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/)
+    - Chap 2 of [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/)
+    - Chap 3 and 12 of [Advanced Data Analysis
+from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf)
+- Lecture materials: 
+    - [Notebook](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/notebooks/W1_supervised_learning.ipynb)
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_1_ipad.pdf)
+
+### Lecture 2 (March 21): Review of decision theory & supervised learning
+- Reading / resources:
+    - Materials for L1-L3 of Matthew Stephens' course: [STAT 348 (Spring 2021)](https://dynalist.io/d/ehiGZbaDzYG4q9tJvuCrag3U#z=Hu-cB8VnWnu5IXOgZ-3MaF6C)
+    - Chap 3 of [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/)
+    - Chap 5.1, 6.2, 7.1 of [An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/)
+    - Chap 7 of [Advanced Data Analysis
+from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf)
+- Lecture materials: 
+    - [Notebook](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/notebooks/W1_supervised_learning.ipynb)
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_2_ipad.pdf)
+
+### Lecture 3 (March 26): Intro to Bayesian modeling & decision theory
+- Reading / resources:
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture01-bayes_normal.pdf) on Bayesian analysis of Gaussian models
+    - Murphy (2007) ["Conjugate Bayesian analysis of the Gaussian distribution"](https://www.cs.ubc.ca/~murphyk/Papers/bayesGauss.pdf)
+    - Jeffrey Miller's [slides](https://jwmi.github.io/BMB/5-Bayesian-linear-regression.pdf) on Bayesian linear regression
+    - Chap 9 of ["Mathematics for Machine Learning"](https://mml-book.github.io/book/mml-book.pdf)
+- Lecture materials: 
+    - [Notebook](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/notebooks/W2_intro_bayes.ipynb)
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_3_ipad.pdf)
+
+### Lecture 4 (March 26): Intro to Bayesian modeling & decision theory
+- Reading / resources:
+	- Chap 1 of Berger (1985) [_Statistical Decision Theory and Bayesian Analysis_](https://link.springer.com/book/10.1007/978-1-4757-4286-2)
+	- Chap 15 "The Navy Searches" of [_The Theory That Would Not Die_](https://yalebooks.yale.edu/book/9780300188226/the-theory-that-would-not-die/)
+- Lecture materials: 
+    - [Notebook](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/notebooks/W2_bayes_decision_theory.ipynb)
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_4_ipad.pdf)
     
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_1.pdf) (apologies for the handwriting)
+### Lecture 5 (April 2): Conjugacy, exponential families, and information theory
+- Reading / resources:
+	- David Blei's  [lectures notes](https://www.cs.columbia.edu/~blei/fogm/2015F/notes/exponential-family.pdf) on conjugacy in exponential families
+	- Jeffrey Miller's  [slides](https://jwmi.github.io/BMB/3-Conjugate-priors.pdf) on conjugate priors
+	- Chap 14.3 of John Duchi's [lecture notes](https://anilkeshwani.github.io/files/John-Duchi-Statistics-311-Electrical-Engineering-377.pdf) on exponential families as maximum entropy distributions
+	- Chap 2.4-2.6 and 4.1-4.3 of Mackay (2005) [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_5_ipad.pdf)
+    
+### Lecture 6 (April 4): Information theory, compression, model selection
+- Reading / resources:
+	- Chap 4, 5.1-5.4, 8, 28 of Mackay (2005) [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf)
+	- Kirsch (2004) ["On Bayesian Model Selection: The Marginal Likelihood, Cross-Validation, and Conditional Log Marginal Likelihood"](https://d2jud02ci9yv69.cloudfront.net/2024-05-07-clml-111/blog/clml/)
+	- Fong & Holmes (2020) ["On the marginal likelihood and cross-validation"](https://academic.oup.com/biomet/article/107/2/489/5715611)
+	- Gleick (2011) [_The Information_](https://jarrettfuller.com/tech/downloads/The-Information.pdf)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_6_ipad.pdf)
+    
+### Lecture 7 (April 9): Probabilistic graphical models (PGMs)
+- Reading / resources:
+	- Chap 2 of Michael Jordan's [lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter2.pdf)
+	- David Blei's [lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/graphical-models.pdf) on basics of PGMs
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_7_ipad.pdf)
 
-### Lecture 2 (March 27): Bayesian linear regression, prior/posterior predictives, model evaluation
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - [Chapter 9 "Linear Regression" of Deisenroth et al.'s _Mathematics for Machine Learning_](https://mml-book.github.io/book/mml-book.pdf) which contains many derivations for quantities in **Bayesian linear regression**
-    - [Jeffrey Miller's slides](https://jwmi.github.io/BMB/5-Bayesian-linear-regression.pdf) on **Bayesian linear regression**
-    - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture01-bayes_normal.pdf) on **Bayesian analysis of Gaussian models**
-    - ["Conjugate Bayesian analysis of the Gaussian distribution" by Murphy (2007)](https://www.cs.ubc.ca/~murphyk/Papers/bayesGauss.pdf)
-    - [Chapter 28 "Model Comparison and Occam’s Razor"](https://www.inference.org.uk/itprnn/book.pdf) of David Mackay's _Information Theory, Inference, and Learning Algorithms_ (2003)
-      
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_2.pdf)
+### Lecture 8 (April 11): Inference in PGMs: variable elimination, belief propagation, and message-passing
+- Reading / resources:
+	- [Chap 3](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter3.pdf) and [chap 4](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter4.pdf) of Michael Jordan's lecture notes
+	- David Blei's [lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/inference.pdf) on inference in PGMs
+	- Yedidia et al. (2001) ["Bethe free energy, Kikuchi approximations, and belief propagation algorithms"](https://www.merl.com/publications/docs/TR2001-16.pdf)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_8_ipad.pdf)
+    
+### Lecture 9 (April 16): Learning and inference in hidden Markov models (HMMs)
+- Reading / resources:
+    - Chap 17 of Murphy (2012) ["Machine learning: a probabilistic perspective"](https://catalog.lib.uchicago.edu/vufind/Record/8919021) (available as e-book via the library)
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture13_hmms.pdf) on HMMs
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_9_ipad.pdf)
+   
+### Lecture 10 (April 18): Learning and inference in hidden Markov models (HMMs)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_10_ipad.pdf)
+    
+### Lecture 11 (April 23): Bayesian mixture models and EM
+- Reading / resources:
+   - Chap 9 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on mixtures and EM
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture07-mixtures.pdf) on Bayesian mixtures
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture08-em.pdf) on EM
+    - David Blei's [lecture notes](http://www.cs.columbia.edu/~blei/fogm/2016F/doc/gibbs.pdf) on Bayesian mixtures
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_11_ipad.pdf)
+    
+### Lecture 12 (April 25): Gibbs sampling and MCMC
+- Reading / resources:
+    - Chap 11.1.6-11.3 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+    - David Blei's [lecture notes](http://www.cs.columbia.edu/~blei/fogm/2016F/doc/gibbs.pdf) on Bayesian mixtures and Gibbs sampling
+    - Matthew Stephen's [lecture notes](https://stephens999.github.io/fiveMinuteStats/gibbs1.html) on Gibbs sampling
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture04_mcmc.pdf) on MCMC
+    - Geweke (2004): ["Getting it Right: Joint Distribution Tests of Posterior Simulators"](http://qed.econ.queensu.ca/pub/faculty/ferrall/quant/papers/04_04_29_geweke.pdf)
+    - Roger Grosse's [blogpost](https://lips.cs.princeton.edu/testing-mcmc-code-part-2-integration-tests/) on Geweke testing
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_12_ipad.pdf)
  
-### Lecture 3 (April 1): Hierarchical models, Gaussian variance priors, preview to MCMC and PGMs
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - [Materials for L4](https://dynalist.io/d/ehiGZbaDzYG4q9tJvuCrag3U#z=Hu-cB8VnWnu5IXOgZ-3MaF6C) from Mathew Stephens' STAT 348 (2021) on **shrinkage, empirical Bayes, the "Normal means" problem** 
-    - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture01-bayes_normal.pdf) on **Bayesian analysis of Gaussian models**
-    - [Chapter 5 "Hierarchical models"](https://sites.stat.columbia.edu/gelman/book/BDA3.pdf) of Andrew Gelman et al.'s _Bayesian Data Analysis_
-      
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_3.pdf)
+### Lecture 13 (April 27): Poisson / non-negative matrix factorization and auxiliary-variable MCMC
+- Reading / resources: 
+   - Dunson & Herring (2005) ["Bayesian latent variable models for mixed discrete outcomes"](https://pubmed.ncbi.nlm.nih.gov/15618524/)
+   - Gopalan et al. (2014) ["Scalable Recommendation with Poisson factorization"](https://arxiv.org/pdf/1311.1704)
+   - Lee and Seung (1999) ["Learning the parts of objects by non-negative matrix factorization"](https://www.nature.com/articles/44565)
+   - Gillis (2014) ["The How and Why of Nonnegative Matrix Factorization"](https://arxiv.org/pdf/1401.5226.pdf)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_13_ipad.pdf)
  
-### Lecture 4 (April 3): Gibbs sampling and MCMC
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - [Parts 1 and 2 of David Blei's lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/graphical-models.pdf) on the **basics of directed PGMs**
-    - Chapters 11.2-11.3 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **MCMC and Gibbs sampling**
-    - [Matthew Stephen's vignette](https://stephens999.github.io/fiveMinuteStats/gibbs1.html) on **Gibbs sampling**
-    - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture04_mcmc.pdf) on **MCMC**
-    - ["Getting it Right: Joint Distribution Tests of Posterior Simulators" by Geweke (2004)](http://qed.econ.queensu.ca/pub/faculty/ferrall/quant/papers/04_04_29_geweke.pdf) (**the original Geweke testing paper**)
-    - [Roger Grosse's blogpost](https://lips.cs.princeton.edu/testing-mcmc-code-part-2-integration-tests/) on **Geweke testing**"
-      
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_4.pdf)
+### Midterm (May 2)
 
-### Lecture 5 (April 8): Bayesian mixture models, conjugacy and exponential familes
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - Chapters 9.1-9.2 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **mixture models**
-    - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture07-mixtures.pdf) on **Bayesian mixture models**
-    - [David Blei's lecture notes](http://www.cs.columbia.edu/~blei/fogm/2016F/doc/gibbs.pdf) on **Bayesian mixture models**
-    - ["Dealing with label switching in mixture models" by Stephens (2000)](https://stephenslab.uchicago.edu/assets/papers/Stephens2000b.pdf)
-    - [David Blei's lectures notes](https://www.cs.columbia.edu/~blei/fogm/2015F/notes/exponential-family.pdf) on **conjugacy and exponential families**
-    - [Jeffrey Miller's slides](https://jwmi.github.io/BMB/3-Conjugate-priors.pdf) on **conjugate priors**
-      
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_5.pdf)
+### Lecture 14 (April May 7):  Latent Dirichlet allocation (LDA) and variational inference (VI)
+- Reading / resources:
+    - Chap 27.3 of Murphy (2012) [_Machine Learning: A Probabilistic Perspective_](http://noiselab.ucsd.edu/ECE228/Murphy_Machine_Learning.pdf)
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture09-lda_cavi.pdf) on CAVI for LDA
+    - Jeffrey Miller's [slides](https://jwmi.github.io/BMB/12-Variational-inference-and-LDA.pdf) on CAVI for LDA
+    - Matt Gormley's [slides](https://www.cs.cmu.edu/~mgormley/courses/10701-f16/slides/lecture20-topic-models.pdf) on LDA
+    - Blei, Ng, Jordan (2003) ["Latent Dirichlet Allocation"](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
+    - Pritchard, Stephens, Donnelly (2000) ["Inference of Population Structure Using Multilocus Genotype Data"](https://academic.oup.com/genetics/article/155/2/945/6048111)
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_14_15_ipad.pdf)
 
-### Lecture 6 (April 10): The EM algorithm
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-   - Chapter 9 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **mixture models and EM**
-   - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture08-em.pdf) on **EM**
-   - Section 6.2.1 (and related sections) of ["Graphical models, exponential families, and variational inference" by Wainwright & Jordan (2008)](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/reading/WainwrightJordan2008.pdf) on **EM in exponential families**
-   - ["Homeomorphic-Invariance of EM..." by Kunstner et al. (2021)](https://proceedings.mlr.press/v130/kunstner21a/kunstner21a.pdf) on the **convergence properties of EM**
-
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_6.pdf)
-
-### Lecture 7 (April 15): Inference and learning in Hidden Markov models (HMMs)
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-   - [Scott Linderman's slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture13_hmms.pdf) on **HMMs**
-   - Chapter 17 of Kevin Murphy's [_Machine Learning: a Probabilistic Perspective_](https://www.cs.ubc.ca/~murphyk/MLbook/pml-toc-1may12.pdf) (2012) on **Markov and hidden Markov models**
-   - Chapter 15 "The Navy Searches" of [_The Theory That Would Not Die_](https://yalebooks.yale.edu/book/9780300188226/the-theory-that-would-not-die/) on **the search for the USS Scorpion**
-     
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_7.pdf)
-
-### Lecture 8 (April 17): Exact inference in discrete graphical models
-- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
-    - [David Blei's lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/graphical-models.pdf) on the **basics of directed and undirected PGMs**
-    - [David Blei's lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/inference.pdf) on the **inference in PGMs**
-    - [Chapter 2 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter2.pdf) on the **basics of directed and undirected PGMs**
-    - [Chapter 3 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter3.pdf) on the **variable elimination algorithm**
-    - [Chapter 4 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter4.pdf) on **sum-product and belief propagation**
-     
-- Lecture notes: 
-    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_8.pdf)
-
-
-
+### Lecture 15 (April May 9): Variational inference (cont.): CAVI and SVI
+- Reading / resources:
+    - Blei, Kucukelbir & McAuliffe (2017) ["Variational inference: A review for statisticians"](http://www.cs.columbia.edu/~blei/fogm/2018F/materials/BleiKucukelbirMcAuliffe2017.pdf)
+    - Chap 10.1-10.2, 10.4 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+    - Slides from [lecture 2](https://github.com/aschein/stat_451/blob/main/materials/lecture_2.pdf) of STAT 451 on CAVI and SVI
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture09-cavi.pdf) on VI
+- Lecture materials: 
+    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_14_15_ipad.pdf)
+ 
+   
 
