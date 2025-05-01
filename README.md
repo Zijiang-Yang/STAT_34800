@@ -18,12 +18,10 @@ The University of Chicago
     - Aaron: Thurs 5:00-6:00pm (Searle 236)
 
 ## Assignments
-- [Assignment 1: Supervised learning](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw1.ipynb). Due **Saturday March 30 at 11:59pm** on GradeScope. 
-- [Assignment 2: Priors, regularization, shrinkage](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw2.ipynb). Due **Saturday April 6 at 11:59pm** on GradeScope. 
-- [Assignment 3: Exponential families, conjugacy, entropy](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw3.pdf). Due **Monday April 15 at 11:59pm** on GradeScope. 
-- [Assignment 4: HMMs and the USS Scorpion](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw4/hw4.ipynb). Due **Wednesday April 24 at 11:59pm** on GradeScope. 
-- [Assignment 5: EM and Gibbs sampling](https://github.com/aschein/stat_348_2024/blob/main/assignments/hw5/hw5.ipynb). Due **Friday May 10 at 11:59pm** on GradeScope. 
-
+- [Assignment 1: Bayesian linear regression](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw1/hw1.ipynb). Due **Sunday April 6 at 11:59pm** on GradeScope. 
+- [Assignment 2: Hierarchical models and Gibbs sampling](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw2/hw2.ipynb). Due **Sunday April 13 at 11:59pm** on GradeScope.
+- [Assignment 3: Mixture models and EM](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw3/hw3.ipynb). Due **Sunday April 20 at 11:59pm** on GradeScope.
+- [Assignment 4: HMMs and the sum-product algorithm](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw4/hw4.ipynb). Due **Sunday May 4 at 11:59pm** on GradeScope. 
 
 ## Schedule
 
@@ -153,14 +151,35 @@ from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/A
 - Lecture materials: 
     - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_14_15_ipad.pdf)
 
-### Lecture 15 (April May 9): Variational inference (cont.): CAVI and SVI
-- Reading / resources:
-    - Blei, Kucukelbir & McAuliffe (2017) ["Variational inference: A review for statisticians"](http://www.cs.columbia.edu/~blei/fogm/2018F/materials/BleiKucukelbirMcAuliffe2017.pdf)
-    - Chap 10.1-10.2, 10.4 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
-    - Slides from [lecture 2](https://github.com/aschein/stat_451/blob/main/materials/lecture_2.pdf) of STAT 451 on CAVI and SVI
-    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture09-cavi.pdf) on VI
-- Lecture materials: 
-    - [iPad notes](https://github.com/aschein/stat_348_2024/blob/main/lecture_materials/ipad_notes/lecture_14_15_ipad.pdf)
+### Lecture 8 (April 17): Exact inference in discrete graphical models
+- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
+    - [David Blei's lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/graphical-models.pdf) on the **basics of directed and undirected PGMs**
+    - [David Blei's lecture notes](https://www.cs.columbia.edu/~blei/fogm/2016F/doc/inference.pdf) on the **inference in PGMs**
+    - [Chapter 2 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter2.pdf) on the **basics of directed and undirected PGMs**
+    - [Chapter 3 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter3.pdf) on the **variable elimination algorithm**
+    - [Chapter 4 of Michael Jordan's lecture notes](https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/Readings/Graphical_models/chapter4.pdf) on **sum-product and belief propagation**
+     
+- Lecture notes: 
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_8.pdf)
+
+### Lecture 9 (April 22): Information theory
+- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
+   	- Chapter 1 of David MacKay's [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf) (2005) on an **intro to information theory**
+   	- Chapter 4 of David MacKay's [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf) (2005) on the **source coding theorem**
+    - James Gleick' [_The Information_](https://jarrettfuller.com/tech/downloads/The-Information.pdf) (2011); a fantastically entertaining general-audience book on the **the history / context of information theory**.
+     
+- Lecture notes: 
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_9.pdf)
  
+### Lecture 10 (April 29): Information theory (cont.); intro to variational inference
+- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
+   	- Chapter 8 of David MacKay's [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf) (2005) on **mutual information**
+   	- Chapter 28.3 of David MacKay's [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf) (2005) on the **minimum description length**
+    - Chapter 14.3 of John Duchi's [lecture notes](https://anilkeshwani.github.io/files/John-Duchi-Statistics-311-Electrical-Engineering-377.pdf) on **exponential families as maximum entropy distributions**
+    - [David Blei's lectures notes](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) on **variational inference**
+    - Chapters 10.1-10.4 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **variational inference**
    
+- Lecture notes:
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_9.pdf) (from last time)
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_10.pdf)
 
