@@ -21,7 +21,8 @@ The University of Chicago
 - [Assignment 1: Bayesian linear regression](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw1/hw1.ipynb). Due **Sunday April 6 at 11:59pm** on GradeScope. 
 - [Assignment 2: Hierarchical models and Gibbs sampling](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw2/hw2.ipynb). Due **Sunday April 13 at 11:59pm** on GradeScope.
 - [Assignment 3: Mixture models and EM](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw3/hw3.ipynb). Due **Sunday April 20 at 11:59pm** on GradeScope.
-- [Assignment 4: HMMs and the sum-product algorithm](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw4/hw4.ipynb). Due **Sunday May 4 at 11:59pm** on GradeScope. 
+- [Assignment 4: HMMs and the sum-product algorithm](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw4/hw4.ipynb). Due **Tuesday May 6 at 11:59pm** on GradeScope.
+- [Assignment 5: Poisson matrix factorization and CAVI](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw5/hw5.ipynb). Due **Wednesday May 14 at 11:59pm** on GradeScope. 
 
 ## Schedule
 
@@ -177,9 +178,33 @@ from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/A
    	- Chapter 28.3 of David MacKay's [_Information Theory, Inference, and Learning Algorithms_](https://www.inference.org.uk/itprnn/book.pdf) (2005) on the **minimum description length**
     - Chapter 14.3 of John Duchi's [lecture notes](https://anilkeshwani.github.io/files/John-Duchi-Statistics-311-Electrical-Engineering-377.pdf) on **exponential families as maximum entropy distributions**
     - [David Blei's lectures notes](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) on **variational inference**
-    - Chapters 10.1-10.4 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **variational inference**
    
 - Lecture notes:
     - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_9.pdf) (from last time)
     - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_10.pdf)
+ 
+### Lecture 11 (May 1): Coordinate ascent variational inference (CAVI) and latent Dirichlet allocation (LDA)
+- Reading / resources (optional; for reference) roughly in the order as they appeared in lecture:
+    - ["Latent Dirichlet Allocation" by Blei, Ng, Jordan (2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) **the original LDA paper**
+    - ["Inference of Population Structure Using Multilocus Genotype Data" by Pritchard, Stephens, Donnelly (2000)](https://academic.oup.com/genetics/article/155/2/945/6048111) **the other original LDA paper**
+    - Chapters 10.1-10.4 of Bishop (2006) [_Pattern Recognition and Machine Learning_](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) on **variational inference**
+    - [David Blei's lectures notes](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) on **variational inference**
+    - ["Variational inference: A review for statisticians" by Blei, Kucukelbir & McAuliffe (2017)](http://www.cs.columbia.edu/~blei/fogm/2018F/materials/BleiKucukelbirMcAuliffe2017.pdf) **an excellent review paper on VI**
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture09-lda_cavi.pdf) on **CAVI for LDA**
+    - Jeffrey Miller's [slides](https://jwmi.github.io/BMB/12-Variational-inference-and-LDA.pdf) on **CAVI for LDA**
+
+- Lecture notes:
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_11.pdf) (**updated**)
+
+### Lecture 12 (May 6): Poisson matrix factorization, data augmentation, stochastic variational inference (SVI)
+- Reading / resources:
+    - ["Variational inference: A review for statisticians" by Blei, Kucukelbir & McAuliffe (2017) ](http://www.cs.columbia.edu/~blei/fogm/2018F/materials/BleiKucukelbirMcAuliffe2017.pdf) **an excellent review paper on VI and SVI**
+    - [Slides from STAT 451](https://github.com/aschein/stat_451/blob/main/materials/lecture_2.pdf) on **CAVI and SVI**
+    - ["Scalable Recommendation with Poisson factorization" by Gopalan et al. (2014)](https://arxiv.org/pdf/1311.1704) **Poisson MF for recommendation**
+    - ["Cookbook-based Scalable Music Tagging with Poisson Matrix Factorization" by Liang, Paisley & Ellis (2014)](https://archives.ismir.net/ismir2014/paper/000363.pdf) **great example of CAVI/SVI for Poisson MF**
+    - ["On the Connection Between Non-Negative Matrix Factorization and Latent Dirichlet Allocation" by Geiger (2024)](https://arxiv.org/html/2405.20542v1) **on the connection**
+   
+- Lecture notes:
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_11.pdf) (from last time; **updated**)
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_12.pdf)
 
