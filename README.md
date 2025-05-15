@@ -22,7 +22,8 @@ The University of Chicago
 - [Assignment 2: Hierarchical models and Gibbs sampling](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw2/hw2.ipynb). Due **Sunday April 13 at 11:59pm** on GradeScope.
 - [Assignment 3: Mixture models and EM](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw3/hw3.ipynb). Due **Sunday April 20 at 11:59pm** on GradeScope.
 - [Assignment 4: HMMs and the sum-product algorithm](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw4/hw4.ipynb). Due **Tuesday May 6 at 11:59pm** on GradeScope.
-- [Assignment 5: Poisson matrix factorization and CAVI](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw5/hw5.ipynb). Due **Wednesday May 14 at 11:59pm** on GradeScope. 
+- [Assignment 5: Poisson matrix factorization and CAVI](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw5/hw5.ipynb). Due **Wednesday May 14 at 11:59pm** on GradeScope.
+- [Assignment 6: Neural networks and variational autoencoders (VAESs)](https://github.com/aschein/stat_348_2025/blob/main/assignments/hw6/hw6.ipynb). Due **Wednesday May 21 at 11:59pm** on GradeScope. 
 
 ## Schedule
 
@@ -208,3 +209,25 @@ from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/A
     - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_11.pdf) (from last time; **updated**)
     - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_12.pdf)
 
+### Lecture 13 (May 8): Tensor decomposition, research talk on modeling international relations data
+- Reading / resources:
+    - Chapters 1, 4, 9 of Ballard & Kolda's [_Tensor Decompositions for Data Science_](https://www.mathsci.ai/post/tensor-textbook/) (2024) **great intro / reference for tensor decomposition**
+    - ["The ALL0CORE Tensor Decomposition..." by Hood & Schein (2024)](https://proceedings.mlr.press/v238/hood24a/hood24a.pdf) **the central paper of the talk; see references therein**
+   
+- Slides:
+    - [Slides on research talk](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/slides/all0core_slides.pdf)
+
+### Lecture 14 (May 13): Variational autoencoders (VAEs) and amortized VI
+- Reading / resources:
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture11-12-vaes.pdf) on **VAEs and amortized VI**
+    - Scott Linderman's [slides](https://github.com/slinderman/stats305c/blob/spring2023/slides/lecture05-continuous_lvms.pdf) on **PCA and connection to VAEs**
+    - ["Auto-Encoding Variational Bayes" by Kingma & Welling (2014)](https://arxiv.org/pdf/1312.6114) **one of the two original VAE papers**
+    - ["Stochastic Backpropagation and Approximate Inference in Deep Generative Models" by Rezende et al. (2014)](https://arxiv.org/abs/1401.4082) **one of the two original VAE papers**
+    - ["Advances in Variational Inference" by Zhang et al. (2019)](https://ieeexplore.ieee.org/document/8588399) **excellent survey of modern VI**
+    - ["Inference Suboptimality in VAEs" by Cremer et al. (2018)](https://arxiv.org/pdf/1801.03558) **on the amortization gap**
+    - ["Amortized Variational Inference: When and Why?" by Margossian & Blei (2024)](https://arxiv.org/pdf/2307.11018) **on the amortization gap**
+    - ["Backprop is not just the chain rule" by Tim Vieira](https://timvieira.github.io/blog/post/2017/08/18/backprop-is-not-just-the-chain-rule/) **famous blogpost on backprop**
+    - ["Lossless compression with latent variable models using bits-back coding" by Brian Keng](https://bjlkeng.io/posts/lossless-compression-with-latent-variable-models-using-bits-back-coding/) **blogpost explaining the "bits-back" argument**
+   
+- Lecture notes:
+    - [iPad notes](https://github.com/aschein/stat_348_2025/blob/main/lecture_materials/ipad_notes/lecture_14.pdf)
